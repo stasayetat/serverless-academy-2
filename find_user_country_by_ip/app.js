@@ -39,7 +39,7 @@ app.listen(3000, ()=> {
     console.log('Server started');
 });
 
-function findCountry(arrChunk, ipNumber) {
+function findCountry(arrChunk, ipNumber) { //Find country in chunk
     for(let i = 0; i < arrChunk.length; i++) {
         if(ipNumber < Number(arrChunk[i][0].slice(1, -1))) {
             return arrChunk[i-1];
@@ -47,7 +47,7 @@ function findCountry(arrChunk, ipNumber) {
     }
 }
 
-function transformIpToIpNumber(ip) {
+function transformIpToIpNumber(ip) {//Transform IPv4 to IP number
     const ipArr = ip.split('.');
     return 16777216*Number(ipArr[0]) + 65536*Number(ipArr[1]) + 256*Number(ipArr[2]) + Number(ipArr[3]);
 }

@@ -1,2 +1,6 @@
 .idea/
 /auth_api/node_modules
+/find_user_country_by_ip/node_modules
+/json_storage/node_modules
+/shortlinker_api/node_modules
+/shortlinker_api/dist
